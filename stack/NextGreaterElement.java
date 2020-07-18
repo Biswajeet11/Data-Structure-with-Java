@@ -10,9 +10,9 @@ class NextGreaterElement {
       }
       st.push(arr[i]);
     }
-    while(!st.isEmpty()){
-      int popValue =st.pop();
-      System.out.println(popValue+"--> "+-1);
+    while (!st.isEmpty()) {
+      int popValue = st.pop();
+      System.out.println(popValue + "--> " + -1);
     }
 
   }
