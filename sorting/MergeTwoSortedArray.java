@@ -78,7 +78,7 @@ public class MergeTwoSortedArray {
     }
     int output[] = mergedSortedArray(arr1, arr2);
     for (int i = 0; i < output.length; i++) {
-      System.out.print(output[i]+" ");
+      System.out.print(output[i] + " ");
     }
   }
 }
