@@ -29,18 +29,18 @@ https://www.youtube.com/watch?v=MZaf_9IZCrc
 public class PartitionOfArray {
 
   public static int[] divideTheArray(int arr[], int pivot) {
-    int i = -1;
+    int i = 0;
     int j = 0;
 
-    while (i < arr.length && j < arr.length) {
-      if (arr[j] > pivot) {
-        j++;
-      } else {
-        i++;
+    while (i < arr.length) {
+      if (arr[i] <= pivot) {
         swap(arr, i, j);
+        i++;
+        j++;
+      }else {
+        i++;
       }
     }
-
     return arr;
 
   }
