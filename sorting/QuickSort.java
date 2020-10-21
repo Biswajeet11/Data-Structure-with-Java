@@ -8,11 +8,8 @@ public class QuickSort {
     }
     int pivot = arr[high];
     int pivotIndex = divideTheArray(arr, pivot, low, high);
-    System.out.println("pivot" + arr[pivotIndex]);
     quickSort(arr, low, pivotIndex - 1);
     quickSort(arr, pivotIndex + 1, high);
-    System.out.println("low" + low);
-    System.out.println("high" + high);
 
   }
 
@@ -24,12 +21,12 @@ public class QuickSort {
         swap(arr, i, j);
         i++;
         j++;
-      }else {
+      } else {
         i++;
       }
     }
 
-    return j-1;
+    return j - 1;
 
   }
 
