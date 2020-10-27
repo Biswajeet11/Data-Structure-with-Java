@@ -68,7 +68,6 @@ public class HistogramMaxRectangle {
     return maxArea;
   }
 
-
   public static void main(String[] args) {
     int[] barValues = { 6, 2, 5, 4, 5, 1, 6 };
     long largestRectangleValue = largestRectangle(barValues);
