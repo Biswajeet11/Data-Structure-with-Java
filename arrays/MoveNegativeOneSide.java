@@ -3,6 +3,9 @@ import java.util.Scanner;
 /*
 Move all negative numbers to beginning and positive to end with constant extra space
 
+//logic is based on quick sort and the pivot element is 0 where pivot element is less than 0
+
+
 An array contains both positive and negative numbers in random order.
 Rearrange the array elements so that all negative numbers appear before all positive numbers.
 Examples : 
