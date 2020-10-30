@@ -45,16 +45,47 @@ Sample Output
 
 public class MinCostMaze {
 
-  public static int getMinCost(int arr[][]) {
-    int n = arr.length;
-    int m = arr[0].length;
+  public static int getMinCostM(int arr[][], int i, int j, int storage[][]) {
+    int m = arr.length;
+    int n = arr[0].length;
 
-    // if(n)
-    return 0;
+    if (i == m - 1 && j == n - 1) {
+      return arr[i][j];
+    }
+
+    if (i > m - 1 || j > n - 1) {
+      return Integer.MAX_VALUE;
+    }
+
+    if (storage[i][j] != -1) {
+      return storage[i][j];
+    }
+
+    int pathH = getMinCostM(arr, i, j + 1, storage);
+    int pathV = getMinCostM(arr, i + 1, j, storage);
+    int pathD = getMinCostM(arr, i + 1, j + 1, storage);
+
+    storage[i][j] = arr[i][j] + Math.min(Math.min(pathH, pathV), pathD);
+
+    return storage[i][j];
+  }
+
+  public static int getMinCostM(int arr[][]) {
+    int m = arr.length;
+    int n = arr[0].length;
+
+    int storage[][] = new int[m][n];
+
+    for (int i = 0; i < storage.length; i++) {
+      for (int j = 0; j < storage[0].length; j++) {
+        storage[i][j] = -1;
+      }
+    }
+
+    return getMinCostM(arr, 0, 0, storage);
   }
 
   public static void main(String[] args) {
-
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter the number of rows for 1st Matrix");
     int m = sc.nextInt();
@@ -66,6 +97,7 @@ public class MinCostMaze {
         arr[i][j] = sc.nextInt();
       }
     }
-    getMinCost(arr);
+    int minCost = getMinCostM(arr);
+    System.out.println("mincost" + minCost);
   }
 }
