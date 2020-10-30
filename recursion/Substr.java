@@ -1,4 +1,3 @@
-package com.myjavapractce;
 
 public class Substr {
 	public void substr(String input,String ans) {
