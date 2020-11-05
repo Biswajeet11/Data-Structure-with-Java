@@ -1,4 +1,3 @@
-package com.myjavapractce;
 
 public class RecursionPrint {
 	public static void print(int n) {

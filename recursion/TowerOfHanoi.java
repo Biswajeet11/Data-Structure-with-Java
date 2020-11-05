@@ -1,6 +1,5 @@
-package com.myjavapractce;
 
-public class Test {
+public class TowerOfHanoi {
 	
 	public static void tower(char s,char h,char d,int n) {
 		if(n==1) {
