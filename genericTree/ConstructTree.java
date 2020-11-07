@@ -64,8 +64,23 @@ public class ConstructTree {
       int getmax = getMaxData(child);
       max = Math.max(getmax, max);
     }
+
     max = Math.max(max, root.data);
     return max;
+  }
+
+  public int getHeightOfTheTree(Node<Integer> root) {
+    if (root == null) {
+      return 0;
+    }
+
+    int height = 0;
+    for (Node<Integer> child : root.children) {
+      int maxHeight = getHeightOfTheTree(child);
+      height = Math.max(maxHeight, height);
+    }
+
+    return height+1;
   }
 
   public static void main(String[] args) {
@@ -82,10 +97,13 @@ public class ConstructTree {
 
     int maxTreeValue = ct.getMaxData(root);
 
+    int heightOfTree = ct.getHeightOfTheTree(root);
+
     System.out.println("The tree size" + treeSize);
 
     System.out.println("The max tree Value" + maxTreeValue);
 
+    System.out.println("Height of the tree" + heightOfTree);
   }
 
 }
