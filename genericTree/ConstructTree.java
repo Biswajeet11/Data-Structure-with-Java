@@ -57,6 +57,17 @@ public class ConstructTree {
     return childSize + 1;
   }
 
+  public int getMaxData(Node<Integer> root) {
+    int max = Integer.MIN_VALUE;
+
+    for (Node<Integer> child : root.children) {
+      int getmax = getMaxData(child);
+      max = Math.max(getmax, max);
+    }
+    max = Math.max(max, root.data);
+    return max;
+  }
+
   public static void main(String[] args) {
 
     int arr[] = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1 };
@@ -69,7 +80,11 @@ public class ConstructTree {
 
     int treeSize = ct.size(root);
 
+    int maxTreeValue = ct.getMaxData(root);
+
     System.out.println("The tree size" + treeSize);
+
+    System.out.println("The max tree Value" + maxTreeValue);
 
   }
 
