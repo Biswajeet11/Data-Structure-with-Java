@@ -36,7 +36,7 @@ public class ConstructTree {
     return root;
   }
 
-  public  void printTree(Node<Integer> root) {
+  public void printTree(Node<Integer> root) {
     String str = root.data + ":";
     for (Node<Integer> child : root.children) {
       str += child.data + ",";
@@ -49,16 +49,27 @@ public class ConstructTree {
 
   }
 
+  public int size(Node<Integer> root) {
+    int childSize = 0;
+    for (Node<Integer> child : root.children) {
+      childSize += size(child);
+    }
+    return childSize + 1;
+  }
+
   public static void main(String[] args) {
 
-    int arr[] = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1,
-        -1 };
+    int arr[] = { 10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1 };
 
     ConstructTree ct = new ConstructTree();
 
-    Node<Integer> root= ct.getData(arr);
+    Node<Integer> root = ct.getData(arr);
 
     ct.printTree(root);
+
+    int treeSize = ct.size(root);
+
+    System.out.println("The tree size" + treeSize);
 
   }
 
