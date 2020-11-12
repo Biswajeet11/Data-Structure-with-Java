@@ -37,7 +37,6 @@ Sample Output
 package genericTree;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.Stack;
 
 public class LinearizeTree {
