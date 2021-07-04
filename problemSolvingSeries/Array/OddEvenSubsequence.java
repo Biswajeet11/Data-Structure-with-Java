@@ -54,6 +54,6 @@ public class OddEvenSubsequence {
     int arr[] = { 1, 2, 2, 5, 6 };
     OddEvenSubsequence seq = new OddEvenSubsequence();
     int value = seq.sequenceSolve(arr);
-    System.out.println(value);
+    System.out.println(value); // prints the count
   }
 }

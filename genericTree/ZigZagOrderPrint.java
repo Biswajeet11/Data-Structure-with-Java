@@ -54,7 +54,7 @@ public class ZigZagOrderPrint {
           cst.push(child);
         }
       } else {
-        for (int i = node.children.size()-1; i >= 0; i--) {
+        for (int i = node.children.size() - 1; i >= 0; i--) {
           Node<Integer> child = node.children.get(i);
           cst.push(child);
         }
