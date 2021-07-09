@@ -75,11 +75,4 @@ public class Anagrams {
       System.out.println();
   }
 }
-
-
-
-
-
-  }
-
 }
