@@ -66,13 +66,13 @@ public class Anagrams {
     list.add("god");
     list.add("tca");
 
-    ArrayList<ArrayList<Integer>> al =an.anagrams(list);
-    
+    ArrayList<ArrayList<Integer>> al = an.anagrams(list);
+
     for (int i = 0; i < al.size(); i++) {
       for (int j = 0; j < al.get(i).size(); j++) {
-          System.out.print(al.get(i).get(j) + " ");
+        System.out.print(al.get(i).get(j) + " ");
       }
       System.out.println();
+    }
   }
-}
 }
