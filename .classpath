@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="backtracking/|recursion/|strings/|graph/|stack/|2dArray/|problemSolvingSeries/Hashmap/|patternPrinting/|problemSolvingSeries/Array/|priorityQueue/|mathematical/|dynamicProgramming/|sorting/|codethon/stack/|searching/|hashmap/|problemSolvingSeries/MultiDArray/|arrays/" kind="src" path=""/>
+	<classpathentry kind="src" path="2dArray"/>
+	<classpathentry kind="src" path="arrays"/>
+	<classpathentry kind="src" path="backtracking"/>
+	<classpathentry kind="src" path="codethon/stack"/>
+	<classpathentry kind="src" path="dynamicProgramming"/>
+	<classpathentry kind="src" path="graph"/>
+	<classpathentry kind="src" path="hashmap"/>
+	<classpathentry kind="src" path="mathematical"/>
+	<classpathentry kind="src" path="patternPrinting"/>
+	<classpathentry kind="src" path="priorityQueue"/>
+	<classpathentry kind="src" path="problemSolvingSeries/Array"/>
+	<classpathentry kind="src" path="problemSolvingSeries/Hashmap"/>
+	<classpathentry kind="src" path="problemSolvingSeries/MultiDArray"/>
+	<classpathentry kind="src" path="recursion"/>
+	<classpathentry kind="src" path="searching"/>
+	<classpathentry kind="src" path="sorting"/>
+	<classpathentry kind="src" path="stack"/>
+	<classpathentry kind="src" path="strings"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
