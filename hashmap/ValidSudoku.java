@@ -27,7 +27,7 @@ public class ValidSudoku {
 	                board[r][c]=str.charAt(c);
 	            }
 	        }
-	        
+	        /*hasSeen.add method return false if element is present */
 	        for(int i=0;i<9;i++){
 	            for(int j=0;j<9;j++){
 	                if(board[i][j]!='.'){
@@ -36,7 +36,6 @@ public class ValidSudoku {
 	                    return false;
 	                  }   
 	                }
-	                
 	            }
 	        }
 	        return true;
