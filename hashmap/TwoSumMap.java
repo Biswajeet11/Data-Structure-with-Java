@@ -38,7 +38,7 @@ public class TwoSumMap {
 				newArr[0] = index1;
 				newArr[1] = index2;
 				break;
-			} else  {
+			} else if(!map.containsKey(arr[i]))  {
 				map.put(arr[i], i);
 			}
 		}
