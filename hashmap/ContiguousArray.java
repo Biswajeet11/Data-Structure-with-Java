@@ -31,20 +31,15 @@ Output 2:
     2
  * */
 
-
-
-
 public class ContiguousArray {
 	
 	
 	public static int arrayCount(int arr[]) {
-		
-		
-		int sum =0;
+		int sum = 0;
 		
 		for(int i=0;i<arr.length;i++) {
-			if(arr[i]==0) {
-				arr[i]=-1;
+			if(arr[i] == 0) {
+				arr[i] = -1;
 			}
 		}
 		
@@ -68,10 +63,10 @@ public class ContiguousArray {
 	
 	
 	public static void main(String args[]) {
-		 int A [] = {1, 0, 1, 0, 1};
+		int A [] = {1, 0, 1, 0, 1};
 		int count = arrayCount(A);
 		
-		System.out.println("count"+count);
+		System.out.println("count"+ count);
 		
 	}
 
