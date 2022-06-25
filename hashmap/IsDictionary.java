@@ -77,6 +77,6 @@ public class IsDictionary {
 	    	A.add("none");
 	    	A.add("no");
 	    	int val = solve(A,B);
-	    	System.out.print("val"+val);
+	    	System.out.print("val "+val);
 	    }
 }
