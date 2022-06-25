@@ -1,6 +1,6 @@
 /*
  * 
- * You are given two strings, A and B, of size N and M, respectively.
+You are given two strings, A and B, of size N and M, respectively.
 
 You have to find the count of all permutations of A present in B as a substring. 
 You can assume a string will have only lowercase letters.
