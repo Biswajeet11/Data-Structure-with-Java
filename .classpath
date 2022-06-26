@@ -5,7 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="backtracking/|recursion/|strings/|graph/|stack/|2dArray/|problemSolvingSeries/Hashmap/|patternPrinting/|problemSolvingSeries/Array/|priorityQueue/|mathematical/|dynamicProgramming/|sorting/|codethon/stack/|searching/|hashmap/|problemSolvingSeries/MultiDArray/|arrays/" kind="src" path=""/>
+	<classpathentry kind="src" path="Numbers"/>
 	<classpathentry kind="src" path="2dArray"/>
 	<classpathentry kind="src" path="arrays"/>
 	<classpathentry kind="src" path="backtracking"/>
