@@ -41,21 +41,6 @@ Explanation 1:
 public class Sixlets {
 	
 	public static int sixlets(int arr[], int sum , int index , int B) {
-		
-//		  if (sum > 1000) {
-//
-//	            return 0;
-//		  }
-//	        if (cnt == 0) {
-//	        	 return 1;
-//	        }
-//	           
-//	        if (i == a.length) {
-//	            return 0;
-//	        }
-//	        // Take ith element or leave it.   
-//	        return sixlets(a, i + 1, sum, cnt) + sixlets(a, i + 1, sum + a[i], cnt - 1);
-	
 		if(sum > 1000) {
 			return 0;
 		}
