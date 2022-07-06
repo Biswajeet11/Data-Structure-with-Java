@@ -25,7 +25,7 @@ public class Permutation {
 	
 
 	public  ArrayList<ArrayList<Integer>> getPermutation(ArrayList<Integer>arr) {
-		list = new ArrayList<>();
+		 list = new ArrayList<>();
 		 getPermutationHelper(0,arr.size()-1,arr);
 		 return list;
 	}
